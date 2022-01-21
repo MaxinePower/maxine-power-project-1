@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5baaeeb670.js" crossorigin="anonymous"></script>
+    <title>Restaurant Mall Blog Page</title>
+</head>
+<body>
+    <!-- blog header -->
+    <header class="blog-header">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Blog</h1>
+    </header>
+
+    <main class="blog-main">
+
+
+        <!-- should comments and comment-form be in one section? -->
+        <!-- comments -->
+        <section class="comments">
+            <!-- what h is this? -->
+            <h>Comments:</h>
+
+            <!-- comment 1 -->
+            <div class="comment">
+                <div class="img-container">
+                    <img src="./assets/comment-1.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <p class="comment-info">Tuesday October 9th, 2019 by Ali</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, quia laudantium fugiat ipsa incidunt qui tempore aut veniam nostrum velit nulla deleniti! Ratione incidunt accusantium deserunt voluptatum, et minima at illo illum!</p>
+                </div>
+            </div>
+
+            <!-- comment 2 -->
+            <div class="comment">
+                <div class="img-container">
+                    <img src="./assets/comment-2.jpg" alt="">
+                </div>
+                <div class="text-container">
+                    <p class="comment-info">Tuesday October 10th, 2019 by Lisa</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iusto omnis voluptatum excepturi nesciunt! Voluptates repellendus repellat quos?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- comment form -->
+        <form action="" class="comment-form">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" placeholder="Name">
+
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" placeholder="Email address">
+
+            <label for="comment" class="sr-only">Comment</label>
+            <textarea id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+
+            <button>Post Comment</button>
+    </main>
+
+    <!-- very plain footer -->
+    <footer>
+        <p>Copyright © 2019 <a href="https://junocollege.com/">Juno College</a></p>
+    </footer>
+</body>
+</html>
