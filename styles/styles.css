@@ -220,3 +220,142 @@ template {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+body, a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #ffd300;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3.45rem;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 4.99rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+input, textarea {
+  font-family: "Barlow", sans-serif;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2b331b;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #ffd300;
+  border: 3px solid #ffd300;
+  padding: 10px;
+}
+button:hover, button:focus {
+  color: #fff;
+  background-color: #0f0f0f;
+  border: 3px solid #ffd300;
+}
+
+.secondary {
+  color: #fff;
+  background-color: #0f0f0f;
+  border: 3px solid #0f0f0f;
+}
+.secondary:hover, .secondary:focus {
+  color: #0f0f0f;
+  background-color: #ffd300;
+  border: 3px solid #ffd300;
+}
+
+form button {
+  width: 100%;
+}
+
+footer {
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  background-color: #0f0f0f;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header nav a {
+  padding-right: 50px;
+}
+
+.contact-header {
+  background-image: url(../assets/contact-header.jpg);
+  height: 50vh;
+}
+
+.contact-form {
+  background-color: #171b0e;
+  -webkit-box-shadow: 12px 12px 2px 1px #ffd300;
+          box-shadow: 12px 12px 2px 1px #ffd300;
+}
+
+form {
+  width: 60%;
+  min-height: 50vh;
+  padding: 50px;
+}
+form input, form textarea {
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+}
+form input {
+  width: calc(50% - 25px);
+  border-bottom: 2px solid #ffd300;
+  margin-bottom: 50px;
+}
+form #name {
+  margin-right: 25px;
+}
+form textarea {
+  width: 100%;
+  height: 40%;
+  border: 2px solid #ffd300;
+  margin-bottom: 50px;
+}

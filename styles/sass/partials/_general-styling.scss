@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $tertiary;
+    color: $primary;
+}
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+// buttons
+button {
+	background-color: $secondary;
+	border: 3px solid $secondary;
+	padding: 10px;
+    &:hover, &:focus {
+                color: $primary;
+                background-color: $quinary;
+                border: 3px solid $secondary;
+        }
+}
+
+.secondary {
+	color: $primary;
+	background-color: $quinary;
+	border: 3px solid $quinary;
+    &:hover, &:focus {
+        color: $quinary;
+        background-color: $secondary;
+        border: 3px solid $secondary;
+    }
+}
+form button {
+    width: 100%;
+}
+
+// footer
+footer {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    background-color: $quinary;
+}

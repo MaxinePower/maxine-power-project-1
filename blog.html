@@ -28,12 +28,22 @@
 
     <main class="blog-main">
 
-
+        <section>
+            <article class="blog-post">
+                <img src="./assets/blog-post-image.jpg" alt="">
+                <h2 class="accent-header">Employement opportunites</h2>
+                <p></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ipsum, deleniti nisi recusandae repudiandae amet deserunt tempore odio rem. Aliquid, magnam eaque voluptas, quo quia impedit harum quae rem similique repudiandae fugiat sapiente ut ipsam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et iure cum illo inventore eius exercitationem enim nulla odit soluta ipsam sed aliquam molestias itaque, numquam dolorem deleniti deserunt sint expedita recusandae? Eveniet ex aliquid illum doloremque voluptate officiis odit, et impedit repellat praesentium porro temporibus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio sapiente corporis provident, consectetur, debitis nulla quibusdam quos deleniti temporibus natus excepturi voluptate voluptatum? Veniam corporis sint nemo, alias deleniti ad vitae, perferendis ipsa minima exercitationem id aut magni, quod molestiae. Enim ipsum commodi animi veniam esse ipsa voluptatem molestiae quas officia rem eaque hic odio dolorum, nam velit eum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem commodi nam quas nesciunt debitis! Nemo, assumenda. Perferendis itaque eaque asperiores obcaecati cum adipisci, quia nostrum.</p>
+            </article>
+        </section>
         <!-- should comments and comment-form be in one section? -->
         <!-- comments -->
         <section class="comments">
             <!-- what h is this? -->
-            <h>Comments:</h>
+            <h2>Comments:</h2>
 
             <!-- comment 1 -->
             <div class="comment">
@@ -56,20 +66,22 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iusto omnis voluptatum excepturi nesciunt! Voluptates repellendus repellat quos?</p>
                 </div>
             </div>
+        
+
+            <!-- comment form -->
+            <form action="" class="comment-form">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email address">
+
+                <label for="comment" class="sr-only">Comment</label>
+                <textarea id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+
+                <button>Post Comment</button>
+            </form>
         </section>
-
-        <!-- comment form -->
-        <form action="" class="comment-form">
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" placeholder="Name">
-
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" id="email" placeholder="Email address">
-
-            <label for="comment" class="sr-only">Comment</label>
-            <textarea id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-
-            <button>Post Comment</button>
     </main>
 
     <!-- very plain footer -->

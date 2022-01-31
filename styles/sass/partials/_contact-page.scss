@@ -1,0 +1,10 @@
+.contact-header {
+    background-image: url(../assets/contact-header.jpg);
+    height: 50vh;
+}
+
+// contact form styling
+.contact-form {
+    background-color: $quaternary;
+    box-shadow: 12px 12px 2px 1px $secondary;
+}
