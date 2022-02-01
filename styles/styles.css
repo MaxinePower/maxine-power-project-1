@@ -392,6 +392,7 @@ footer {
 
 header nav li {
   background-color: #171b0e;
+  border-radius: 20px;
 }
 header nav a {
   margin: 0 25px;
@@ -822,12 +823,28 @@ form textarea {
   }
 }
 @media (max-width: 500px) {
+  header nav a {
+    margin: 0 15px;
+  }
+
   h1, h1 span {
     font-size: 2.5rem;
   }
 
   h2, h3, h4 {
     line-height: 2rem;
+  }
+
+  .options li {
+    margin-top: 5vh;
+  }
+
+  .nature-restaurants .img-container {
+    width: 80%;
+  }
+
+  .img-container {
+    margin-bottom: 25px;
   }
 
   .gallery li {
