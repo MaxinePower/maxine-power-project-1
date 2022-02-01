@@ -3,9 +3,33 @@
     background-repeat: no-repeat;
 }
 
+.side-menu {
+    width: 25%;
+    background-color: $quaternary;
+    // maybe play with position sticky
+    position: absolute;
+    top: 10vh;
+    left: 100px;
+    padding: 30px;
+    p {
+        margin-bottom: 5vh;
+    }
+    img {
+        // styling img to be larger than container
+        position: relative;
+        width: 145%;
+        top: -50px;
+        left: -150px;
+    }
+    ul {
+        list-style: disc inside;
+    }
+}
+
 .blog-main {
+    position: relative;
     section, .blog-img, form {
-        width: 70%;
+        width: 60%;
     }
     .blog-img {
         box-shadow: -25px 25px $secondary;
@@ -13,7 +37,6 @@
         right: -25px;
         top: -25px;
     }
-    max-width: 1400px;
     width: 100%;
     margin: auto;
     margin-right: 0;
@@ -28,12 +51,6 @@
             margin-bottom: 40px;
         }
     }
-}
-.side-menu {
-    position: sticky;
-    top: 50px;
-    margin: auto;
-    margin-left: 0;
 }
 
 .comments {

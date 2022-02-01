@@ -272,7 +272,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25rem;
+  color: #ffd300;
+  font-weight: 400;
+  font-size: 1.12rem;
   line-height: 2.9rem;
   letter-spacing: 0.8px;
 }
@@ -615,8 +617,29 @@ main nav {
   background-repeat: no-repeat;
 }
 
+.side-menu {
+  width: 25%;
+  background-color: #171b0e;
+  position: absolute;
+  top: 10vh;
+  left: 100px;
+  padding: 30px;
+}
+.side-menu p {
+  margin-bottom: 5vh;
+}
+.side-menu img {
+  position: relative;
+  width: 145%;
+  top: -50px;
+  left: -150px;
+}
+.side-menu ul {
+  list-style: disc inside;
+}
+
 .blog-main {
-  max-width: 1400px;
+  position: relative;
   width: 100%;
   margin: auto;
   margin-right: 0;
@@ -632,7 +655,7 @@ main nav {
           align-items: flex-end;
 }
 .blog-main section, .blog-main .blog-img, .blog-main form {
-  width: 70%;
+  width: 60%;
 }
 .blog-main .blog-img {
   -webkit-box-shadow: -25px 25px #ffd300;
@@ -648,13 +671,6 @@ main nav {
 }
 .blog-main .blog-post p {
   margin-bottom: 40px;
-}
-
-.side-menu {
-  position: sticky;
-  top: 50px;
-  margin: auto;
-  margin-left: 0;
 }
 
 .comments {
