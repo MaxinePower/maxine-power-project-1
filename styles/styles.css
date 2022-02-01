@@ -390,6 +390,9 @@ footer {
   margin: 0;
 }
 
+header nav li {
+  background-color: #171b0e;
+}
 header nav a {
   margin: 0 25px;
   font-family: "Josefin Sans", sans-serif;
@@ -405,6 +408,30 @@ main nav {
   text-align: left;
 }
 
+form {
+  width: 65%;
+  min-height: 50vh;
+  padding: 50px;
+}
+form input, form textarea {
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+}
+form input {
+  width: calc(50% - 25px);
+  border-bottom: 2px solid #ffd300;
+  margin-bottom: 50px;
+}
+form #name {
+  margin-right: 25px;
+}
+form textarea {
+  width: 100%;
+  height: 55%;
+  border: 2px solid #ffd300;
+}
+
 .home-header {
   background-image: url(../assets/home-header.jpg);
   position: relative;
@@ -416,9 +443,12 @@ main nav {
   right: 0;
   bottom: -25vh;
 }
+.home-header h1 {
+  background-color: #171b0e;
+  max-width: 490px;
+}
 .home-header span {
   display: block;
-  max-width: 490px;
   padding: 11px 9px 0 9px;
   margin-bottom: 15px;
   color: #171b0e;
@@ -498,9 +528,6 @@ main nav {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: right;
 }
 .restaurants .something-new .img-container {
@@ -712,26 +739,99 @@ main nav {
   color: #fff;
 }
 
-form {
-  width: 65%;
-  min-height: 50vh;
-  padding: 50px;
+@media (max-width: 1000px) {
+  h1, h1 span {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .home-header {
+    margin-bottom: 5vh;
+  }
+  .home-header img {
+    display: none;
+  }
+
+  .options ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .options ul li {
+    width: 90%;
+  }
+
+  .img-container {
+    width: 40%;
+    height: 45vh;
+  }
+
+  .text-container {
+    width: 40%;
+  }
+
+  .best-burgers, .something-new {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .best-burgers .img-container, .something-new .img-container {
+    width: 80%;
+    bottom: 0;
+    top: 0;
+    margin-bottom: 5vh;
+  }
+  .best-burgers .text-container, .something-new .text-container {
+    width: 90%;
+  }
+
+  .banner {
+    margin-bottom: 5vh;
+  }
+
+  .nature-restaurants {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nature-restaurants .img-container {
+    width: 50%;
+  }
+  .nature-restaurants .text-container {
+    text-align: center;
+    width: 90%;
+    padding: 5vh 0;
+  }
 }
-form input, form textarea {
-  background-color: transparent;
-  border: none;
-  padding: 15px;
+@media (max-width: 800px) {
+  .gallery li {
+    width: calc((100% / 2) - 20px);
+    margin-top: 20px;
+  }
 }
-form input {
-  width: calc(50% - 25px);
-  border-bottom: 2px solid #ffd300;
-  margin-bottom: 50px;
-}
-form #name {
-  margin-right: 25px;
-}
-form textarea {
-  width: 100%;
-  height: 55%;
-  border: 2px solid #ffd300;
+@media (max-width: 500px) {
+  h1, h1 span {
+    font-size: 2.5rem;
+  }
+
+  h2, h3, h4 {
+    line-height: 2rem;
+  }
+
+  .gallery li {
+    width: calc(100% - 20px);
+    margin-top: 20px;
+  }
 }

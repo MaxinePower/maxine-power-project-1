@@ -8,10 +8,13 @@
         right: 0;
         bottom: -25vh;
     }
+    h1 {
+        background-color: $quaternary;
+        max-width: 490px;
+    }
     span {
         // the width of the background is troubling as it does the whole wrapper width. hmm. max-width perhaps?
         display: block;
-        max-width: 490px;
         padding: 11px 9px 0 9px;
         margin-bottom: 15px;
         color: $quaternary;
@@ -74,7 +77,6 @@
     }
     .something-new {
         flex-direction: row-reverse;
-        justify-content: space-between;
         text-align: right;
         .img-container {
             position: relative;

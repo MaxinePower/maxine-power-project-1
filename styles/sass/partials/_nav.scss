@@ -1,4 +1,7 @@
 header nav {
+    li {
+        background-color: $quaternary;
+    }
     a {
         margin: 0 25px;
         font-family: $accessoryFont;

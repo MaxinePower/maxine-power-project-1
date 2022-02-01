@@ -1,0 +1,85 @@
+@media (max-width: 1000px) {
+    // breakpoint for smaller desktop devices
+    h1, h1 span {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .home-header {
+        margin-bottom: 5vh;
+        img {
+            display: none;
+        }
+    }
+
+    .options ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+            width: 90%;
+        }
+    }
+
+    .img-container {
+        width: 40%;
+        height: 45vh;
+    }
+    .text-container {
+        width: 40%;
+        // width is a problem here needs some sort of padding
+    }
+
+    .best-burgers, .something-new {
+        flex-direction: column;
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+        .img-container {
+            width: 80%;
+            bottom: 0;
+            top: 0;
+            margin-bottom: 5vh;
+        }
+        .text-container {
+            width: 90%;
+        }
+    }
+
+    .banner {
+        margin-bottom: 5vh;
+    }
+    .nature-restaurants {
+        flex-direction: column;
+        .img-container {
+            width: 50%;
+        }
+        .text-container {
+            text-align: center;
+            width: 90%;
+            padding: 5vh 0;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    // tablets
+    .gallery li {
+        width: calc((100% / 2) - 20px);
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    // phones
+    h1, h1 span {
+        font-size: 2.5rem;
+    }
+    h2, h3, h4 {
+        line-height: 2rem;
+    } 
+    .gallery li {
+        width: calc(100% - 20px);
+        margin-top: 20px;
+    }
+}
