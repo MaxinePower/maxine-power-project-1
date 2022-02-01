@@ -7,24 +7,30 @@ body {
     color: $primary;
 }
 .wrapper {
-    max-width: 1200px;
+    max-width: 1300px;
     width: 90%;
     margin: 0 auto;
 }
-
+img {
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
 
 // buttons
 button {
+    text-transform: uppercase;
 	background-color: $secondary;
 	border: 3px solid $secondary;
 	padding: 10px;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
     &:hover, &:focus {
-                color: $primary;
-                background-color: $quinary;
-                border: 3px solid $secondary;
-        }
+        color: $primary;
+        background-color: $quinary;
+        border: 3px solid $secondary;
+    }
 }
-
 .secondary {
 	color: $primary;
 	background-color: $quinary;
@@ -38,11 +44,22 @@ button {
 form button {
     width: 100%;
 }
-
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+// header
+header {
+    padding: 10vh 0;
+    height: 75vh;
+}
 // footer
 footer {
     padding: 5px;
     text-align: center;
     width: 100%;
     background-color: $quinary;
+    margin: 0;
 }

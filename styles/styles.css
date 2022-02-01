@@ -272,15 +272,27 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
 button {
+  text-transform: uppercase;
   background-color: #ffd300;
   border: 3px solid #ffd300;
   padding: 10px;
+  -webkit-transition: color 0.3s, background-color 0.3s, border 0.3s;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
 button:hover, button:focus {
   color: #fff;
@@ -303,14 +315,7 @@ form button {
   width: 100%;
 }
 
-footer {
-  padding: 5px;
-  text-align: center;
-  width: 100%;
-  background-color: #0f0f0f;
-}
-
-header nav ul {
+ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,14 +324,172 @@ header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
+header {
+  padding: 10vh 0;
+  height: 75vh;
+}
+
+footer {
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  background-color: #0f0f0f;
+  margin: 0;
+}
+
 header nav a {
-  padding-right: 50px;
+  margin-right: 50px;
+}
+
+.underline {
+  border-bottom: 3px solid #ffd300;
+}
+
+.home-header {
+  background-image: url(../assets/home-header.jpg);
+  position: relative;
+  margin-bottom: 25vh;
+}
+.home-header img {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: -20vh;
+}
+.home-header span {
+  display: block;
+  max-width: 475px;
+  padding: 9px 9px 0 9px;
+  color: #171b0e;
+  background-color: white;
+}
+
+.options {
+  margin-bottom: 10vh;
+}
+.options li {
+  width: calc(50% - 50px);
+}
+
+.restaurants {
+  background-color: #171b0e;
+  margin-bottom: 10vh;
+}
+.restaurants img {
+  height: 100%;
+}
+.restaurants .img-container {
+  width: 40%;
+  height: 45vh;
+}
+.restaurants .text-container {
+  width: 50%;
+  padding: 100px;
+}
+.restaurants .best-burgers, .restaurants .something-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.restaurants .best-burgers .img-container {
+  -webkit-box-shadow: 20px 20px #ffd300;
+          box-shadow: 20px 20px #ffd300;
+  position: relative;
+  top: -5vh;
+}
+.restaurants .something-new {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.restaurants .something-new .img-container {
+  position: relative;
+  bottom: -5vh;
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+}
+
+.giftcard {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.nature-restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.nature-restaurants .img-container {
+  width: 20%;
+  height: 100%;
+  -webkit-box-shadow: -20px 20px #ffd300;
+          box-shadow: -20px 20px #ffd300;
+}
+.nature-restaurants .text-container {
+  width: 75%;
+  padding: 50px;
+}
+
+.gallery ul {
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery li {
+  width: calc((100% / 3) - 20px);
 }
 
 .contact-header {
   background-image: url(../assets/contact-header.jpg);
   height: 50vh;
+}
+
+.contact-main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-info ul a {
+  color: #ffd300;
+  margin-right: 30px;
+  display: inline-block;
+  -webkit-transition: color 0.5s, -webkit-transform 0.4s;
+  transition: color 0.5s, -webkit-transform 0.4s;
+  transition: transform 0.4s, color 0.5s;
+  transition: transform 0.4s, color 0.5s, -webkit-transform 0.4s;
+}
+.contact-info ul a:hover, .contact-info ul afocus {
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  color: #fff;
 }
 
 .contact-form {

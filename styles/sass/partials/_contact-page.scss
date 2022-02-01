@@ -3,6 +3,31 @@
     height: 50vh;
 }
 
+// putting things next to each other
+.contact-main .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+// contact-info 
+.contact-info {
+    ul {
+        a {
+            color: $secondary;
+            margin-right: 30px;
+            display: inline-block;
+            transition: transform 0.4s, color 0.5s;
+                &:hover, &focus {
+                    transform: scale(1.8);
+                    color: $primary;
+                }
+        }
+        
+    }
+}
+
+
 // contact form styling
 .contact-form {
     background-color: $quaternary;

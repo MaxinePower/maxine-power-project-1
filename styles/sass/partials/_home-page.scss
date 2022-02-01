@@ -1,0 +1,92 @@
+.home-header {
+    background-image: url(../assets/home-header.jpg);
+    position: relative;
+    margin-bottom: 25vh;
+    img {
+        position: absolute;
+        width: 50%;
+        right: 0;
+        bottom: -20vh;
+    }
+    span {
+        display: block;
+        max-width: 475px;
+        padding: 9px 9px 0 9px;
+        color: $quaternary;
+        background-color: white;
+    }
+}
+
+.options {
+    li {
+        width: calc(50% - 50px);
+    }
+    margin-bottom: 10vh;
+}
+
+.restaurants {
+    background-color: $quaternary;
+    margin-bottom: 10vh;
+    img {
+        height: 100%;
+    }
+    .img-container {
+        width: 40%;
+        height: 45vh;
+    }
+    .text-container {
+        width: 50%;
+        padding: 100px;
+    }
+
+    .best-burgers, .something-new {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .best-burgers .img-container{
+        box-shadow: 20px 20px $secondary;
+        position: relative;
+        top: -5vh;
+    }
+    .something-new {
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        .img-container {
+            position: relative;
+            bottom: -5vh;
+            box-shadow: -20px 20px $secondary;
+        }
+    }
+}
+
+.giftcard {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.nature-restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .img-container {
+        width: 20%;
+        // idk why this height 100% works but it does and thats what matters
+        height: 100%;
+        box-shadow: -20px 20px $secondary;
+    }
+    .text-container {
+        width: 75%;
+        padding: 50px;
+    }
+}
+
+.gallery {
+    ul {
+        list-style: none;
+        justify-content: space-between;
+    }
+    li {
+        width: calc((100% / 3) - 20px);
+    }
+}

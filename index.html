@@ -13,54 +13,58 @@
     <title>Restaurant Mall Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- the span will be display block. i may not need the spaces in the h1 since it could mess up the alignment -->
-        <h1>The <span>Restaurant</span> Mall</h1>
-        <!-- an img to be absolutely positioned -->
-        <img src="./assets/home-box-header.png" alt="a plate of food in the forground with a restaurant dining room in the background">
+    <header class="home-header">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="underline">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- the span will be display block. i may not need the spaces in the h1 since it could mess up the alignment -->
+            <h1>The <span>Restaurant</span> Mall</h1>
+            <!-- an img to be absolutely positioned -->
+            <img src="./assets/home-box-header.png" alt="a plate of food in the forground with a restaurant dining room in the background">
+        </div>
     </header>
 
     <main>
-        <!-- section of site options -->
-        <section class="options">
-            <nav>
-                <ul>
-                    <li>
-                        <!-- maybe a map link? -->
-                        <a href="#">
-                            <p class="option-title">Location</p>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo vero repellat eligendi, ducimus eaque non obcaecati, magnam labore eos magni, recusandae blanditiis molestiae excepturi?</p>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p class="option-title">Community</p>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum error esse repellendus, ut, explicabo laboriosam odio mollitia dolorum libero debitis placeat aut corrupti a temporibus?</p>
-                    </li>
-                    <li>
-                        <a href="./blog.html">
-                            <p class="option-title">Blog</p>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nostrum blanditiis tempore necessitatibus cupiditate maiores, cumque provident, similique rem fugit quod reiciendis tenetur minus laborum.</p>
-                    </li>
-                    <li>
-                        <a href="./contact.html">
-                            <p class="option-title">Get in touch</p>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, hic suscipit esse nisi consequatur neque architecto temporibus iusto placeat unde consequuntur, voluptatum, vel sapiente harum.</p>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="wrapper">
+            <!-- section of site options -->
+            <section class="options">
+                <nav>
+                    <ul>
+                        <li>
+                            <!-- maybe a map link? -->
+                            <a href="#">
+                                <p class="option-title">Location</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo vero repellat eligendi, ducimus eaque non obcaecati, magnam labore eos magni, recusandae blanditiis molestiae excepturi?</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="option-title">Community</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum error esse repellendus, ut, explicabo laboriosam odio mollitia dolorum libero debitis placeat aut corrupti a temporibus?</p>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <p class="option-title">Blog</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nostrum blanditiis tempore necessitatibus cupiditate maiores, cumque provident, similique rem fugit quod reiciendis tenetur minus laborum.</p>
+                        </li>
+                        <li>
+                            <a href="./contact.html">
+                                <p class="option-title">Get in touch</p>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, hic suscipit esse nisi consequatur neque architecto temporibus iusto placeat unde consequuntur, voluptatum, vel sapiente harum.</p>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
 
         <!-- section of restaurants featured -->
         <section class="restaurants">
@@ -87,45 +91,50 @@
             </div>
         </section>
 
-        <!-- giftcard section -->
+        <div class="wrapper">
+            <!-- giftcard section -->
         <section class="giftcard">
             <!-- spelt gift cart on design. should it be gift card -->
-            <h2 class="accent-header">Win a $100 gift cart</h2>
+            <h2 class="accent-header">Win a $100 gift card</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit cupiditate est dolorem rem temporibus unde sapiente impedit voluptate placeat iste corporis dolores quas inventore, quasi porro dignissimos. Labore maiores cum magnam dolores, sequi ducimus nesciunt, magni laudantium soluta quis velit libero eligendi blanditiis consectetur natus iste nisi nulla nobis eum.</p>
             <button class="secondary">Find out more</button>
         </section>
+        </div>
+        
 
         <!-- img banner-->
         <section class="banner">
             <img src="./assets/banner.jpg" alt="">
         </section>
 
-        <!-- bringing nature in spaces section -->
-        <section class="nature-restaurants">
-            <div class="img-container">
-                <img src="./assets/square-image.jpg" alt="dining room in a greenhouse-like stucture with plants hanging from the ceiling">
-            </div>
-            <div class="text-conatainer">
-                <h2 class="accent-header">Bringing nature in spaces</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus veniam consectetur. Commodi sapiente numquam, similique voluptatum eaque quibusdam saepe libero quaerat nostrum incidunt dignissimos, doloribus laudantium consequuntur, fugiat porro laboriosam doloremque nesciunt aut cum assumenda! Natus excepturi ducimus officia, suscipit quibusdam voluptatem nisi at placeat enim veritatis ipsam iusto nihil, pariatur nam, commodi necessitatibus. Repellat exercitationem doloremque saepe. Praesentium, similique, neque et harum fugit aliquid vero beatae ut veritatis deserunt ab necessitatibus reiciendis hic assumenda eaque a ipsa quo quisquam tempore impedit perspiciatis, laborum pariatur? Omnis optio culpa aperiam eos! Tenetur iste quis debitis libero voluptatem, error provident maxime.</p>
-                <button class="secondary">Find our more</button>
-            </div>
-        </section>
+        <div class="wrapper">
+            <!-- bringing nature in spaces section -->
+            <section class="nature-restaurants">
+                <div class="img-container">
+                    <img src="./assets/square-image.jpg" alt="dining room in a greenhouse-like stucture with plants hanging from the ceiling">
+                </div>
+                <div class="text-container">
+                    <h2 class="accent-header">Bringing nature in spaces</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus veniam consectetur. Commodi sapiente numquam, similique voluptatum eaque quibusdam saepe libero quaerat nostrum incidunt dignissimos, doloribus laudantium consequuntur, fugiat porro laboriosam doloremque nesciunt aut cum assumenda! Natus excepturi ducimus officia, suscipit quibusdam voluptatem nisi at placeat enim veritatis ipsam iusto nihil, pariatur nam, commodi necessitatibus. Repellat exercitationem doloremque saepe. Praesentium, similique, neque et harum fugit aliquid vero beatae ut veritatis deserunt ab necessitatibus reiciendis hic assumenda eaque a ipsa quo quisquam tempore impedit perspiciatis, laborum pariatur? Omnis optio culpa aperiam eos! Tenetur iste quis debitis libero voluptatem, error provident maxime.</p>
+                    <button class="secondary">Find out more</button>
+                </div>
+            </section>
 
-        <!-- gallery section -->
-        <section class="gallery">
-            <ul>
-                <li>
-                    <img src="./assets/gallery-image-1.jpg" alt="metal patio railing with incandescent lightbulbs and ivy">
-                </li>
-                <li>
-                    <img src="./assets/gallery-image-2.jpg" alt="neon take away sign in window of restaurant">
-                </li>
-                <li>
-                    <img src="./assets/gallery-image-3.jpg" alt="korean meal spread with bibimbap and kimchi dishes">
-                </li>
-            </ul>
-        </section>
+            <!-- gallery section -->
+            <section class="gallery">
+                <ul>
+                    <li>
+                        <img src="./assets/gallery-image-1.jpg" alt="metal patio railing with incandescent lightbulbs and ivy">
+                    </li>
+                    <li>
+                        <img src="./assets/gallery-image-2.jpg" alt="neon take away sign in window of restaurant">
+                    </li>
+                    <li>
+                        <img src="./assets/gallery-image-3.jpg" alt="korean meal spread with bibimbap and kimchi dishes">
+                    </li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <!-- very plain footer -->
