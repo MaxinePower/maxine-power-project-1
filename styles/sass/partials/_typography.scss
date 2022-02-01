@@ -1,8 +1,12 @@
 html {
     font-size: 125%;
 }
-body {
-    font-family: $body-font;
+*, body, p {
+    font-family: $bodyFont;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
 }
 
 body, a {
@@ -10,27 +14,61 @@ body, a {
 }
 a {
     text-decoration: none;
+    transition: color 0.3s;
 }
 a:hover, a:focus {
     color: $secondary;
 }
-h1 {
-    font-family: $accessory-font;
+
+// header styling
+h1, h1 span, h2, h3, h4 {
+    font-family: $accessoryFont;
     font-weight: 600;
     font-size: 3.45rem;
+    line-height: 1;
     text-transform: uppercase;
 }
-
-h2, h3 {
-    font-family: $accessory-font;
+h2 {
     font-weight: 400;
     line-height: 4.99rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+}
+h2.accent-header {
+    color: $secondary;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 1.3px;
+}
+h4 {
+    font-size: 1.25rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.8px;
+}
+
+// buttons
+button {
+    font-family: $accessoryFont;
     text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.12rem;
+    line-height: 2.08rem;
+}
+
+// navigation
+nav {
+    font-family: $accessoryFont;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.45rem;
+    letter-spacing: 1px;
 }
 
 input, textarea {
-    font-family: $body-font;
+    font-family: $bodyFont;
     color: $primary;
 }
 

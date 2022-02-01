@@ -1,6 +1,8 @@
 .contact-header {
     background-image: url(../assets/contact-header.jpg);
-    height: 50vh;
+    min-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 // putting things next to each other
@@ -8,28 +10,37 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 // contact-info 
 .contact-info {
+    margin-top: 15vh;
     ul {
+        margin-bottom: 20px;
         a {
             color: $secondary;
             margin-right: 30px;
             display: inline-block;
             transition: transform 0.4s, color 0.5s;
-                &:hover, &focus {
-                    transform: scale(1.8);
-                    color: $primary;
-                }
+            &:hover, &focus {
+                transform: scale(1.8);
+                color: $primary;
+            }
         }
-        
     }
+    .mailto {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    // i cannot get the mail to anchor to have margin bottom
 }
 
 
 // contact form styling
 .contact-form {
+    position: relative;
+    top: -15vh;
     background-color: $quaternary;
     box-shadow: 12px 12px 2px 1px $secondary;
 }

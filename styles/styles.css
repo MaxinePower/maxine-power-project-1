@@ -225,8 +225,12 @@ html {
   font-size: 125%;
 }
 
-body {
+*, body, p {
   font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
 }
 
 body, a {
@@ -235,25 +239,60 @@ body, a {
 
 a {
   text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 a:hover, a:focus {
   color: #ffd300;
 }
 
-h1 {
+h1, h1 span, h2, h3, h4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 3.45rem;
+  line-height: 1;
   text-transform: uppercase;
 }
 
-h2, h3 {
-  font-family: "Josefin Sans", sans-serif;
+h2 {
   font-weight: 400;
   line-height: 4.99rem;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
+}
+
+h2.accent-header {
+  color: #ffd300;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 1.3px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.8px;
+}
+
+button {
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.12rem;
+  line-height: 2.08rem;
+}
+
+nav {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.45rem;
+  letter-spacing: 1px;
 }
 
 input, textarea {
@@ -287,10 +326,10 @@ img {
 }
 
 button {
-  text-transform: uppercase;
   background-color: #ffd300;
   border: 3px solid #ffd300;
-  padding: 10px;
+  padding: 2px 6px 0 6px;
+  margin: 35px 0;
   -webkit-transition: color 0.3s, background-color 0.3s, border 0.3s;
   transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
@@ -332,6 +371,9 @@ header {
   padding: 10vh 0;
   height: 75vh;
 }
+header nav {
+  margin-bottom: 15vh;
+}
 
 footer {
   padding: 5px;
@@ -342,11 +384,18 @@ footer {
 }
 
 header nav a {
-  margin-right: 50px;
+  margin: 0 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
 }
 
 .underline {
+  padding-bottom: 2px;
   border-bottom: 3px solid #ffd300;
+}
+
+main nav {
+  text-align: left;
 }
 
 .home-header {
@@ -356,23 +405,48 @@ header nav a {
 }
 .home-header img {
   position: absolute;
-  width: 50%;
+  width: 48%;
   right: 0;
-  bottom: -20vh;
+  bottom: -25vh;
 }
 .home-header span {
   display: block;
-  max-width: 475px;
-  padding: 9px 9px 0 9px;
+  max-width: 490px;
+  padding: 11px 9px 0 9px;
+  margin-bottom: 15px;
   color: #171b0e;
   background-color: white;
 }
 
 .options {
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
+}
+.options ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .options li {
-  width: calc(50% - 50px);
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.options i {
+  color: #0f0f0f;
+  background-color: #ffd300;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 50px;
+  height: 50px;
+  padding: 15px;
+  position: relative;
+  top: 25px;
+  right: 20px;
 }
 
 .restaurants {
@@ -387,8 +461,7 @@ header nav a {
   height: 45vh;
 }
 .restaurants .text-container {
-  width: 50%;
-  padding: 100px;
+  width: 40%;
 }
 .restaurants .best-burgers, .restaurants .something-new {
   display: -webkit-box;
@@ -400,6 +473,12 @@ header nav a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .restaurants .best-burgers .img-container {
   -webkit-box-shadow: 20px 20px #ffd300;
@@ -412,9 +491,10 @@ header nav a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: right;
 }
 .restaurants .something-new .img-container {
   position: relative;
@@ -425,6 +505,8 @@ header nav a {
 
 .giftcard {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 10vh;
 }
 
@@ -438,18 +520,31 @@ header nav a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nature-restaurants .img-container {
-  width: 20%;
+  width: 25%;
   height: 100%;
   -webkit-box-shadow: -20px 20px #ffd300;
           box-shadow: -20px 20px #ffd300;
 }
 .nature-restaurants .text-container {
-  width: 75%;
+  width: 70%;
   padding: 50px;
 }
 
+.gallery {
+  background-color: #171b0e;
+  min-height: 50vh;
+}
+.gallery .wrapper {
+  padding: 10vh 0;
+}
 .gallery ul {
   list-style: none;
   -webkit-box-pack: justify;
@@ -457,12 +552,14 @@ header nav a {
           justify-content: space-between;
 }
 .gallery li {
-  width: calc((100% / 3) - 20px);
+  width: calc((100% / 3) - 40px);
 }
 
 .contact-header {
   background-image: url(../assets/contact-header.jpg);
-  height: 50vh;
+  min-height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact-main .wrapper {
@@ -475,8 +572,17 @@ header nav a {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
+.contact-info {
+  margin-top: 15vh;
+}
+.contact-info ul {
+  margin-bottom: 20px;
+}
 .contact-info ul a {
   color: #ffd300;
   margin-right: 30px;
@@ -491,15 +597,102 @@ header nav a {
           transform: scale(1.8);
   color: #fff;
 }
+.contact-info .mailto {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 
 .contact-form {
+  position: relative;
+  top: -15vh;
   background-color: #171b0e;
   -webkit-box-shadow: 12px 12px 2px 1px #ffd300;
           box-shadow: 12px 12px 2px 1px #ffd300;
 }
 
+.blog-header {
+  background-image: url(../assets/blog-header.jpg);
+  background-repeat: no-repeat;
+}
+
+.blog-main {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.blog-main section, .blog-main .blog-img, .blog-main form {
+  width: 70%;
+}
+.blog-main .blog-img {
+  -webkit-box-shadow: -25px 25px #ffd300;
+          box-shadow: -25px 25px #ffd300;
+  position: relative;
+  right: -25px;
+  top: -25px;
+}
+.blog-main .blog-post {
+  border-left: 5px solid #ffd300;
+  border-bottom: 5px solid #ffd300;
+  padding: 80px;
+}
+.blog-main .blog-post p {
+  margin-bottom: 40px;
+}
+
+.side-menu {
+  position: sticky;
+  top: 50px;
+  margin: auto;
+  margin-left: 0;
+}
+
+.comments {
+  padding: 80px;
+  padding-bottom: 0;
+}
+.comments .img-container {
+  min-width: 100px;
+  margin-right: 40px;
+}
+.comments h3 {
+  margin-bottom: 5vh;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 10vh;
+}
+
+.comment-info, .blog-info {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #ffd300;
+  margin-bottom: 20px;
+}
+
+.blog-info {
+  color: #fff;
+}
+
 form {
-  width: 60%;
+  width: 65%;
   min-height: 50vh;
   padding: 50px;
 }
@@ -518,7 +711,6 @@ form #name {
 }
 form textarea {
   width: 100%;
-  height: 40%;
+  height: 55%;
   border: 2px solid #ffd300;
-  margin-bottom: 50px;
 }
