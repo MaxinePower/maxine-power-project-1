@@ -646,7 +646,7 @@ form textarea {
 }
 
 .blog-header {
-  background-image: url(../assets/blog-header2.jpg);
+  background-image: url(../assets/blog-header.jpg);
   background-repeat: no-repeat;
 }
 
@@ -828,11 +828,27 @@ form textarea {
   }
 
   h1, h1 span {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  p, p a {
+    font-size: 0.9rem;
   }
 
   h2, h3, h4 {
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
 
   .options li {
@@ -848,7 +864,7 @@ form textarea {
   }
 
   .gallery li {
-    width: calc(100% - 20px);
+    width: 100%;
     margin-top: 20px;
   }
 }
