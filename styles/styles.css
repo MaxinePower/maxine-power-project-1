@@ -669,6 +669,10 @@ form textarea {
 }
 .side-menu ul {
   list-style: disc inside;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-main {
@@ -711,7 +715,8 @@ form textarea {
   padding-bottom: 0;
 }
 .comments .img-container {
-  min-width: 100px;
+  width: 100%;
+  max-width: 100px;
   margin-right: 40px;
 }
 .comments h3 {
@@ -834,11 +839,66 @@ form textarea {
   .contact-info {
     margin-bottom: 40px;
   }
+
+  .side-menu, .blog-main {
+    width: 100%;
+    position: static;
+  }
+  .side-menu section, .side-menu .blog-img, .side-menu form, .side-menu .comments .text-container, .blog-main section, .blog-main .blog-img, .blog-main form, .blog-main .comments .text-container {
+    width: 100%;
+  }
+  .side-menu .comments .img-container, .blog-main .comments .img-container {
+    height: 100%;
+  }
+
+  .side-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 10vh auto;
+  }
+  .side-menu img {
+    position: static;
+    max-width: 250px;
+  }
+  .side-menu img, .side-menu div {
+    width: calc((100% / 3) - 10px);
+  }
 }
 @media (max-width: 800px) {
   .gallery li {
     width: calc((100% / 2) - 20px);
     margin-top: 20px;
+  }
+
+  .blog-main .blog-post, .comments {
+    padding: 15px;
+  }
+
+  .side-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .side-menu img, .side-menu div {
+    width: 95%;
   }
 }
 @media (max-width: 500px) {
@@ -899,5 +959,15 @@ form textarea {
   }
   form input {
     margin-bottom: 30px;
+  }
+
+  .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comment .img-container {
+    margin-right: 0;
   }
 }

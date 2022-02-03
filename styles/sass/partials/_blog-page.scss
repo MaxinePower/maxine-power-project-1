@@ -23,6 +23,7 @@
     }
     ul {
         list-style: disc inside;
+        flex-direction: column;
     }
 }
 
@@ -47,7 +48,7 @@
         border-left: 5px solid $secondary;
         border-bottom: 5px solid $secondary;
         padding: 80px;
-        p{
+        p {
             margin-bottom: 40px;
         }
     }
@@ -57,7 +58,8 @@
     padding: 80px;
     padding-bottom: 0;
     .img-container {
-        min-width: 100px;
+        width: 100%;
+        max-width: 100px;
         margin-right: 40px;
     }
     h3 {
