@@ -60,6 +60,25 @@
             padding: 5vh 0;
         }
     }
+
+    form {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+        #name {
+            margin-right: 0px;
+        }
+    }
+
+    // contact page specific
+    .contact-form {
+        position: static;
+        margin-bottom: 40px;
+    }
+    .contact-info {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -105,5 +124,18 @@
     .gallery li {
         width: 100%;
         margin-top: 20px;
+    }
+
+    form {
+        font-size: 0.9rem;
+        padding: 10px;
+        padding-bottom: 30px;
+        &.contact-form {
+            box-shadow: none;
+            border: 5px solid $secondary
+        }
+        input {
+            margin-bottom: 30px;
+        }
     }
 }
