@@ -579,15 +579,33 @@ form textarea {
 }
 .gallery .wrapper {
   padding: 10vh 0;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gallery ul {
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
+  min-width: 200px;
+  margin: 0 15px;
 }
-.gallery li {
-  width: calc((100% / 3) - 40px);
+.gallery .gallery-item {
+  position: absolute;
+}
+.gallery .not-displayed {
+  display: none;
+}
+.gallery .displayed {
+  display: block;
+}
+.gallery button {
+  height: 100px;
+  top: 40%;
 }
 
 .contact-header {

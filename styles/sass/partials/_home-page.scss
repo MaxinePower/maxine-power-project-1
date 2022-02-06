@@ -117,12 +117,34 @@
     min-height: 50vh;
     .wrapper {
         padding: 10vh 0;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
     }
     ul {
         list-style: none;
-        justify-content: space-between;
+        position: relative;
+        min-width: 200px;
+        margin: 0 15px;
     }
-    li {
-        width: calc((100% / 3) - 40px);
+    
+    // adding js carousel feature styling
+
+    
+
+    .gallery-item {
+        position: absolute;
+    }
+    // this is only working rn from cascade
+    .not-displayed {
+        display: none;
+    }
+    .displayed {
+        display: block;
+    }
+    button {
+        height: 100px;
+        top: 40%;
     }
 }
